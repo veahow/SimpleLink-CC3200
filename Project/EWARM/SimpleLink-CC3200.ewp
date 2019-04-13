@@ -765,7 +765,7 @@
         </option>
         <option>
           <name>IlinkAdditionalLibs</name>
-          <state>$PROJ_DIR$/../../Library/cc32xx/driverlib/Release/Exe/driverlib.a</state>
+          <state>$PROJ_DIR$/../../Library/cc32xx/driverlib/ewarm/Release/Exe/driverlib.a</state>
         </option>
         <option>
           <name>IlinkOverrideProgramEntryLabel</name>
