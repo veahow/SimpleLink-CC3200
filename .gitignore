@@ -1,0 +1,5 @@
+*.o
+*.bin
+*.out
+\Project\EWARM\Debug
+\Library\cc32xx\driverlib\ewarm\Release

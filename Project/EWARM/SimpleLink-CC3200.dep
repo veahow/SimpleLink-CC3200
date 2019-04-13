@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>65438207</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2c.c</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\gpio.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\prcm.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_types.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\flash.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\cpu.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\gpio.c</file>
+      <file>$PROJ_DIR$\..\..\Source\main.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\hwspinlock.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2c.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\prcm.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\sdhost.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\des.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\camera.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\spi.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\pin.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\systick.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\aes.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\adc.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2s.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\interrupt.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\shamd5.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\timer.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\uart.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\crc.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_memmap.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_apps_config.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_uart.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\adc.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\udma.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\systick.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\shamd5.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\startup\startup_ewarm.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_timer.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\uart.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\utils.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_mcspi.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\utils.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\wdt.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_ints.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_wdt.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\spi.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\timer.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\uart.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\interrupt.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\udma.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\wdt.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\timer.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_shamd5.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\udma.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_adc.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_udma.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_mmchs.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\utils.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SimpleLink-CC3200.pbd</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\adc.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2s.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\cpu.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\sdhost.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\camera.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\crc.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\aes.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\hwspinlock.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\sdhost.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\flash.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\des.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\hwspinlock.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2s.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_apps_rcm.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\debug.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\camera.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\interrupt.o</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\hwspinlock.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\cpu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\SimpleLink-CC3200.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\interrupt.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\shamd5.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\camera.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\prcm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\prcm.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\sdhost.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\udma.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\des.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\systick.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\wdt.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\flash.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\spi.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\pin.c</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\shamd5.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\utils.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdhost.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2s.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\timer.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\spi.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\pin.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\adc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\interrupt.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\interrupt.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\wdt.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_aes.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\wdt.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\cpu.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\flash.o</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\aes.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\prcm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\flash.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\shamd5.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\SimpleLink-CC3200.bin</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_hib1p2.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\pin.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2s.o</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_hib3p3.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_dthe.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\udma.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\uart.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\cpu.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\wdt.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\gpio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\aes.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\pin.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\spi.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\utils.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\des.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_common_reg.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\startup\startup_ewarm.c</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_des.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_stack_die_ctrl.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_flash_ctrl.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\crc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\camera.pbi</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\camera.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\udma.o</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\pin.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_gprcm.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\flash.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_camera.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\aes.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\i2c.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdhost.o</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\systick.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\timer.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\utils.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\crc.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\cpu.h</file>
+      <file>$PROJ_DIR$\..\..\Library\CC3200\driverlib\prcm.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\spi.o</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_nvic.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2c.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_mcasp.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2s.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\hwspinlock.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_i2c.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\debug.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_gpio.h</file>
+      <file>$PROJ_DIR$\..\..\Library\cc32xx\inc\hw_ocp_shared.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\des.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 139 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\flash.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 151 27 41 159 124 128 147 150 180 120 167 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 151 27 41 159 124 128 147 150 180 120 167 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\cpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 135</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\gpio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 181 41 27 147 180 174 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 181 41 27 147 180 174 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Source\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\hwspinlock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 143 136 125 184 123 129 132 131 5 27 41 147 178</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 143 136 125 184 123 129 132 131 5 27 41 147 178</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2c.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 143 136 125 184 123 129 132 131 179 41 27 5 180 173 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 143 136 125 184 123 129 132 131 179 41 27 5 180 173 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\prcm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 41 27 75 159 124 128 147 4 46 169 120 167</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 41 27 75 159 124 128 147 4 46 169 120 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\sdhost.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 27 54 41 28 46 60</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 27 54 41 28 46 60</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\des.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 143 136 125 184 123 129 132 131 149 130 41 27 5 180 146 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 143 136 125 184 123 129 132 131 149 130 41 27 5 180 146 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\camera.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 41 27 161 28 46 155</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 41 27 161 28 46 155</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 171</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 5 27 38 28 46 43</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 5 27 38 28 46 43</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\pin.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 27 182 126</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 27 182 126</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 172 5 180 46 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 172 5 180 46 32</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\aes.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 143 136 125 184 123 129 132 131 113 130 41 27 172 5 117 180 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 143 136 125 184 123 129 132 131 113 130 41 27 172 5 117 180 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 27 41 52 28 46 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 27 41 52 28 46 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2s.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 41 27 176 28 46 177</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 41 27 176 28 46 177</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\interrupt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 172 5 169 180 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 172 5 169 180 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\shamd5.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 143 136 125 184 123 129 132 131 130 41 27 172 50 5 180 46 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 143 136 125 184 123 129 132 131 130 41 27 172 50 5 180 46 33</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\timer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 27 35 5 180 46 49</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 27 35 5 180 46 49</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 27 5 29 180 46 45</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 27 5 29 180 46 45</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\crc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 175 143 136 125 184 123 129 132 131 130 27 5 168 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175 143 136 125 184 123 129 132 131 130 27 5 168 180</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\udma.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 156</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 53 41 27 180 46 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 53 41 27 180 46 51</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\startup\startup_ewarm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5 41 46</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5 41 46</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 111 134</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\utils.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\utils.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 167</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\timer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 111 166</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\udma.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 156</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 92</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 111 133</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\wdt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 41 27 5 42 180 46 40</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 27 5 42 180 46 40</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\adc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 109</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2s.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\cpu.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 135</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\camera.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 78</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\crc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 153</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\aes.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\flash.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 160 145 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\des.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\hwspinlock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\SimpleLink-CC3200.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 76 73 140 87 135 153 183 116 138 64 142 127 79 103 141 118 164 121 171 70 158 101 119 156 102 95 68 67 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\interrupt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 77 111</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\prcm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 170 111 115 160 145</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\sdhost.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 164</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 66</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 111 165</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\pin.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 141</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\shamd5.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 171</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 144</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\wdt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77 111 114</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\startup\startup_ewarm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2c.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\gpio.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\uart.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\utils.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\timer.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\udma.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\adc.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\i2s.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\cpu.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\camera.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\crc.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\aes.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\flash.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\des.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\hwspinlock.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\interrupt.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\prcm.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\sdhost.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\systick.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\pin.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\shamd5.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\spi.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\driverlib\wdt.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>$PROJ_DIR$\..\..\Library\CC3200\startup\startup_ewarm.c</name>
+      <tool>ICCARM</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
