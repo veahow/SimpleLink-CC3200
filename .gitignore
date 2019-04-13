@@ -1,5 +1,2 @@
-\Project\EWARM\Debug
-\Project\EWARM\Debug\Exe
-\Project\EWARM\Debug\List
-\Project\EWARM\Debug\Obj
+\Project\EWARM\Debug\*
 \Library\cc32xx\driverlib\ewarm\Release
