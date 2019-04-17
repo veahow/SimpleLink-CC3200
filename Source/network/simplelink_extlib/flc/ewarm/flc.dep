@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2215059787</fileChecksum>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\include\extlibs_common.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\user.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\fs.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\socket.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\..\provisioninglib\provisioning_api.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\trace.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\netapp.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\wlan.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\simplelink.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\cc_pal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\wlan_rx_filters.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\source\objInclusion.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\device.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\source\nonos.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\flc.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\..\..\..\simplelink\include\netcfg.h</file>
+      <file>$PROJ_DIR$\Release\Obj\flc.pbd</file>
+      <file>$PROJ_DIR$\Release\Obj\flc.pbi</file>
+      <file>$PROJ_DIR$\Release\exe\flc.a</file>
+      <file>$PROJ_DIR$\Release\Obj\flc.o</file>
+      <file>$PROJ_DIR$\..\..\..\example\ota_update\os\main.c</file>
+      <file>$PROJ_DIR$\..\..\include\flc_api.h</file>
+      <file>$PROJ_DIR$\..\flc.c</file>
+      <file>$PROJ_DIR$\..\..\..\example\ota_update\os\pinmux.c</file>
+      <file>$PROJ_DIR$\..\..\..\example\common\network_common.c</file>
+      <file>$PROJ_DIR$\..\..\..\example\common\button_if.c</file>
+      <file>$PROJ_DIR$\..\..\ota\OtaApp.c</file>
+      <file>$PROJ_DIR$\..\..\ota\CdnClient.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\flc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 2 9 21 8 4 5 1 19 17 11 3 18 10 22 13 6 7 14 15 23 28 20 24 0 12 27 25 34 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>IARCHIVE</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>IARCHIVE</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>Release_Fastboot</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>IARCHIVE</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

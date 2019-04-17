@@ -19,6 +19,22 @@
 @REM 
 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\common\bin\cspybat" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armproc.dll" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armlmiftdi.dll"  %1 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\bin\armbat.dll" --backend -B "--endian=little" "--cpu=Cortex-M4" "--fpu=None" "-p" "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.0\arm\CONFIG\debugger\TexasInstruments\CC3200.ddf" "--semihosting=none" "--device=CC3200" "--lmiftdi_speed=500" 
+@echo off 
 
+if not "%~1" == "" goto debugFile 
 
+@echo on 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\common\bin\cspybat" -f "C:\Users\veahow\Desktop\SimpleLink-CC3200\Project\EWARM\settings\SimpleLink-CC3200.Debug.general.xcl" --backend -f "C:\Users\veahow\Desktop\SimpleLink-CC3200\Project\EWARM\settings\SimpleLink-CC3200.Debug.driver.xcl" 
+
+@echo off 
+goto end 
+
+:debugFile 
+
+@echo on 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\common\bin\cspybat" -f "C:\Users\veahow\Desktop\SimpleLink-CC3200\Project\EWARM\settings\SimpleLink-CC3200.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\veahow\Desktop\SimpleLink-CC3200\Project\EWARM\settings\SimpleLink-CC3200.Debug.driver.xcl" 
+
+@echo off 
+:end

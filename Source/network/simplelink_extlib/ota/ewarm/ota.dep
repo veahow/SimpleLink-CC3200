@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1471550099</fileChecksum>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\OtaHttp.c</file>
+      <file>$PROJ_DIR$\..\OtaClient.c</file>
+      <file>$PROJ_DIR$\..\LogClient.c</file>
+      <file>$PROJ_DIR$\..\OtaApp.c</file>
+      <file>$PROJ_DIR$\..\CdnClient.c</file>
+    </outputs>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>IARCHIVE</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2855398435</fileChecksum>
+  <configuration>
+    <name>NON_OS</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>NON_OS_PM</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>NON_OS_PM_debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>NON_OS_debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>OS</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\prcm.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\timer.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\spi.h</file>
+      <file>$PROJ_DIR$\OS\Obj\spawn.o</file>
+      <file>$PROJ_DIR$\..\include\netcfg.h</file>
+      <file>$PROJ_DIR$\..\include\device.h</file>
+      <file>$PROJ_DIR$\OS\Obj\simplelink.pbd</file>
+      <file>$PROJ_DIR$\OS\Obj\flowcont.o</file>
+      <file>$PROJ_DIR$\OS\Obj\device.o</file>
+      <file>$PROJ_DIR$\..\..\simplelink_extlib\provisioninglib\provisioning_api.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\interrupt.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\rom.h</file>
+      <file>$PROJ_DIR$\OS\Obj\netcfg.pbi</file>
+      <file>$PROJ_DIR$\OS\Obj\driver.o</file>
+      <file>$PROJ_DIR$\..\..\inc\hw_mcspi.h</file>
+      <file>$PROJ_DIR$\OS\Obj\cc_pal.pbi</file>
+      <file>$PROJ_DIR$\OS\Obj\driver.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\..\..\driverlib\pin.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\..\..\inc\hw_types.h</file>
+      <file>$PROJ_DIR$\..\..\inc\hw_udma.h</file>
+      <file>$PROJ_DIR$\..\include\simplelink.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\utils.h</file>
+      <file>$PROJ_DIR$\OS\Obj\wlan.o</file>
+      <file>$PROJ_DIR$\..\..\driverlib\rom_patch.h</file>
+      <file>$PROJ_DIR$\OS\Obj\fs.pbi</file>
+      <file>$PROJ_DIR$\OS\Exe\simplelink.sim</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\..\include\wlan_rx_filters.h</file>
+      <file>$PROJ_DIR$\OS\Obj\device.pbi</file>
+      <file>$PROJ_DIR$\..\user.h</file>
+      <file>$PROJ_DIR$\OS\Obj\socket.pbi</file>
+      <file>$PROJ_DIR$\..\..\inc\hw_ints.h</file>
+      <file>$PROJ_DIR$\..\source\device.c</file>
+      <file>$PROJ_DIR$\..\source\netapp.c</file>
+      <file>$PROJ_DIR$\..\source\netcfg.c</file>
+      <file>$PROJ_DIR$\..\source\fs.c</file>
+      <file>$PROJ_DIR$\..\source\nonos.c</file>
+      <file>$PROJ_DIR$\..\source\wlan.c</file>
+      <file>$PROJ_DIR$\..\source\socket.c</file>
+      <file>$PROJ_DIR$\..\source\spawn.c</file>
+      <file>$PROJ_DIR$\..\source\driver.c</file>
+      <file>$PROJ_DIR$\..\source\flowcont.c</file>
+      <file>$PROJ_DIR$\..\cc_pal_pm.c</file>
+      <file>$PROJ_DIR$\..\cc_pal.c</file>
+      <file>$PROJ_DIR$\..\include\socket.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\inc\hw_common_reg.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\include\wlan.h</file>
+      <file>$PROJ_DIR$\OS\Obj\spawn.pbi</file>
+      <file>$PROJ_DIR$\..\source\protocol.h</file>
+      <file>$PROJ_DIR$\..\..\inc\hw_memmap.h</file>
+      <file>$PROJ_DIR$\OS\Obj\wlan.pbi</file>
+      <file>$PROJ_DIR$\..\source\spawn.h</file>
+      <file>$PROJ_DIR$\OS\Obj\netapp.pbi</file>
+      <file>$PROJ_DIR$\..\include\fs.h</file>
+      <file>$PROJ_DIR$\..\source\flowcont.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\OS\Obj\fs.o</file>
+      <file>$PROJ_DIR$\OS\Obj\cc_pal.o</file>
+      <file>$PROJ_DIR$\OS\Obj\nonos.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\OS\Obj\nonos.o</file>
+      <file>$PROJ_DIR$\..\..\driverlib\rom_map.h</file>
+      <file>$PROJ_DIR$\..\cc_pal.h</file>
+      <file>$PROJ_DIR$\..\..\driverlib\udma.h</file>
+      <file>$PROJ_DIR$\OS\Obj\netapp.o</file>
+      <file>$PROJ_DIR$\OS\Obj\flowcont.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\..\source\driver.h</file>
+      <file>$PROJ_DIR$\..\include\trace.h</file>
+      <file>$PROJ_DIR$\OS\Obj\socket.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\OS\Obj\netcfg.o</file>
+      <file>$PROJ_DIR$\..\..\oslib\osi.h</file>
+      <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
+      <file>$PROJ_DIR$\..\include\netapp.h</file>
+      <file>$PROJ_DIR$\..\source\objInclusion.h</file>
+      <file>$PROJ_DIR$\OS\Exe\simplelink.out</file>
+      <file>$PROJ_DIR$\OS\Exe\simplelink.a</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>IARCHIVE</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\device.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 62 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 62 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\netapp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\netcfg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\fs.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\nonos.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\wlan.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\socket.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\spawn.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\driver.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76 62</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\flowcont.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76 62</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 56 76 62</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\cc_pal.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 37 25 24 21 57 16 52 13 69 29 3 1 12 71 2 27</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 26 35 32 11 51 67 74 79 0 53 75 63 70 10 81 84 77 61 50 83 54 6 5 33 59 37 25 24 21 57 16 52 13 69 29 3 1 12 71 2 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\OS\Exe\simplelink.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 82 65 9 15 8 64 72 80 68 78 4 28 19 22 23 20</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>OS_debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>PM_Framework</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+  <configuration>
+    <name>PM_Framework_debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

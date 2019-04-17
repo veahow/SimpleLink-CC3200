@@ -1,2 +1,15 @@
 /Project/EWARM/Debug/
+
 /Library/cc32xx/driverlib/ewarm/Release/
+
+/Source/network/simplelink/ewarm/NON_OS/
+/Source/network/simplelink/ewarm/NON_OS_PM/
+/Source/network/simplelink/ewarm/OS/
+/Source/network/simplelink/ewarm/PM_Framework/
+
+/Source/network/simplelink_extlib/provisioninglib/ewarm/Release
+/Source/network/simplelink_extlib/ota/ewarm/Release
+/Source/network/simplelink_extlib/flc/ewarm/Release
+
+/Source/network/netapps/mqtt/ewarm/client/
+/Source/network/netapps/mqtt/ewarm/client_server/
