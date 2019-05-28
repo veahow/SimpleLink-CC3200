@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="refresh" content="5">
+	<title>基于SimpleLink的物联网平台设计与开发</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.min.css" media="screen,projection" />
+	<!-- Bootstrap Styles-->
+	<link href="../static/css/bootstrap.css" rel="stylesheet" />
+	<!-- FontAwesome Styles-->
+	<link href="../static/css/font-awesome.css" rel="stylesheet" />
+	<!-- Morris Chart Styles-->
+	<link href="../static/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+	<!-- Custom Styles-->
+	<link href="../static/css/custom-styles.css" rel="stylesheet" />
+	<!-- Google Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="../static/js/Lightweight-Chart/cssCharts.css">
+</head>
+
+<body>
+	<div id="wrapper">
+		<nav class="navbar navbar-default top-navbar" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse"
+					data-target=".sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand waves-effect waves-dark" href="/"><i
+						class="large material-icons">track_changes</i> <strong>SimpleLink</strong></a>
+
+				<div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+			</div>
+		</nav>
+		<!-- Dropdown Structure -->
+
+
+		<!--/. NAV TOP  -->
+		<nav class="navbar-default navbar-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav" id="main-menu">
+
+					<li>
+						<a class="active-menu waves-effect waves-dark" href="/"><i class="fa fa-dashboard"></i>
+							CC3200</a>
+					</li>
+
+					<li>
+						<a href="/about" class="waves-effect waves-dark"><i class="fa fa-qrcode"></i> 关于毕设</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+		<!-- /. NAV SIDE  -->
+
+		<div id="page-wrapper">
+
+			<div class="header">
+				<h1 class="page-header">
+					实时数据
+				</h1>
+			</div>
+
+			<div id="page-inner">
+
+
+				<!-- /. ROW  -->
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="cirStats">
+							<div class="row">
+
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="card-panel text-center">
+										<h4>温度 Temperature</h4>
+										<div class="easypiechart" id="easypiechart-red" data-percent="{{ tmp_status }}"><span
+												class="percent">{{ tmp_status }}℃</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="card-panel text-center">
+										<h4>湿度 Humidity</h4>
+										<div class="easypiechart" id="easypiechart-blue" data-percent="{{ hum_status }}"><span
+												class="percent">{{ hum_status }}%</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4">
+									<div class="card-panel text-center">
+										<h4>PWM占空比</h4>
+										<div class="easypiechart" id="easypiechart-orange" data-percent="{{ pwm_status }}"><span
+												class="percent">{{ pwm_status }}%</span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<!--/.row-->
+
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="card">
+							<div class="card-action">
+								<b>LED</b>
+							</div>
+							<div class="card-image">
+								<div class="collection">
+									<a href="#!" class="collection-item">红色LED灯（GPIO_09）
+										{% if led_status == '1' %}
+										<span class="badge red">开</span>
+										{% else %}
+										<span class="badge gray">关</span>
+										{% endif %}
+									</a>
+									<!-- <a href="#!" class="collection-item">橘色LED灯（GPIO_10）<span class="badge blue">暂未开发</span></a>
+									<a href="#!" class="collection-item">绿色LED灯（GPIO_11）<span class="badge green">暂未开发</span></a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /. PAGE INNER  -->
+			</div>
+			<!-- /. PAGE WRAPPER  -->
+		</div>
+
+
+		<!-- /. WRAPPER  -->
+		<!-- JS Scripts-->
+		<!-- jQuery Js -->
+		<script src="../static/js/jquery-1.10.2.js"></script>
+
+		<!-- Bootstrap Js -->
+		<script src="../static/js/bootstrap.min.js"></script>
+
+		<script src="../static/materialize/js/materialize.min.js"></script>
+
+		<!-- Metis Menu Js -->
+		<script src="../static/js/jquery.metisMenu.js"></script>
+		<!-- Morris Chart Js -->
+		<script src="../static/js/morris/raphael-2.1.0.min.js"></script>
+		<script src="../static/js/morris/morris.js"></script>
+
+
+		<script src="../static/js/easypiechart.js"></script>
+		<script src="../static/js/easypiechart-data.js"></script>
+
+		<script src="../static/js/Lightweight-Chart/jquery.chart.js"></script>
+
+		<!-- Custom Js -->
+		<script src="../static/js/custom-scripts.js"></script>
+
+
+</body>
+
+</html>

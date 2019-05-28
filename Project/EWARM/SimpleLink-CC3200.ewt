@@ -2377,8 +2377,41 @@
     </group>
     <group>
         <name>Bsp</name>
+        <group>
+            <name>Wi-Fi</name>
+            <file>
+                <name>$PROJ_DIR$\..\..\Source\myapi\network.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\Source\myapi\transport.c</name>
+            </file>
+        </group>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\adc_if.c</name>
+        </file>
         <file>
             <name>$PROJ_DIR$\..\..\Source\myapi\global.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\gpio_if.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\i2c_if.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\pinmux.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\pwm_if.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\sensor.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\spi_if.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Source\myapi\uart_if.c</name>
         </file>
     </group>
     <group>
@@ -2421,28 +2454,79 @@
         </file>
     </group>
     <group>
+        <name>Library</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\adc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\aes.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\camera.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\cpu.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\crc.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\des.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\flash.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\hwspinlock.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2c.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\i2s.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\interrupt.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\pin.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\prcm.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\sdhost.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\shamd5.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\spi.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\systick.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\timer.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\uart.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\udma.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\utils.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Library\cc32xx\driverlib\wdt.c</name>
+        </file>
+    </group>
+    <group>
         <name>Network</name>
-        <group>
-            <name>Netapps</name>
-            <group>
-                <name>Mqtt</name>
-                <file>
-                    <name>$PROJ_DIR$\..\..\Source\network\netapps\mqtt\platform\cc32xx_platform.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\Source\network\netapps\mqtt\platform\cc32xx_sl_net.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\Source\network\netapps\mqtt\client\mqtt_client.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\Source\network\netapps\mqtt\common\mqtt_common.c</name>
-                </file>
-                <file>
-                    <name>$PROJ_DIR$\..\..\Source\network\netapps\mqtt\sl\sl_mqtt_client.c</name>
-                </file>
-            </group>
-        </group>
         <group>
             <name>SimpleLink</name>
             <file>

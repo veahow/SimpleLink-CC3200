@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基于SimpleLink的物联网平台设计与开发</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="../static/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="../static/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="../static/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="../static/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="../static/js/Lightweight-Chart/cssCharts.css"> 
+</head>
+<body>
+    <div id="wrapper">
+         <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="/"><i class="large material-icons">track_changes</i> <strong>SimpleLink</strong></a>
+				
+		<div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+
+
+        </nav>
+		<!-- Dropdown Structure -->
+
+	   <!--/. NAV TOP  -->
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="/" class="waves-effect waves-dark"><i class="fa fa-dashboard"></i> CC3200</a>
+                    </li>
+
+                    <li>
+                        <a href="/about" class="active-menu waves-effect waves-dark"><i class="fa fa-qrcode"></i> 关于毕设</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+			  <div class="header"> 
+                        <h1 class="page-header">
+                            关于毕设
+                        </h1>
+									
+		</div>
+		
+            <div id="page-inner"> 
+                                 
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                   <div class="card teal">
+						<div class="card-content white-text">
+						  <span class="card-title">CC3200 LaunchPad</span>
+						  <p>暂无</p>
+						</div>
+						<div class="card-action">
+						  <a href="#">查看官网</a>
+						</div>
+					  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                   <div class="card">
+						<div class="card-content">
+						  <span class="card-title">IAR Embeded Workbench</span>
+						  <p>待定</p>
+						</div>
+						<div class="card-action">
+						  <a href="#">查看官网</a>
+						</div>
+					  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                        <div class="card blue-grey darken-1">
+						<div class="card-content white-text">
+						  <span class="card-title">TI PinMux</span>
+						  <p>管脚配置</p>
+						</div>
+						<div class="card-action">
+						  <a href="#">查看</a>
+						</div>
+					  </div>
+                </div>
+            </div>
+                   <!-- /. ROW  -->
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="card">
+						<div class="card-image waves-effect waves-block waves-light">
+						  <img class="activator" src="http://www.ti.com/diagrams/cc3200-launchxl_cc3200-launchxl_no_bg_resize.jpg">
+						</div>
+						<div class="card-content">
+						  <span class="card-title activator grey-text text-darken-4">CC3200 LaunchPad<i class="material-icons right">more_vert</i></span>
+						  <p><a href="#">官网</a></p>
+						</div>
+						<div class="card-reveal">
+						  <span class="card-title grey-text text-darken-4">CC3200 LaunchPad<i class="material-icons right">close</i></span>
+						  <p>官方开发板</p>
+						</div>
+					  </div>
+                </div>
+                
+            </div>
+                    <!-- /. ROW  --> 
+            <!-- <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="card-action">
+                            指导老师
+                        </div>
+                        <div class="col">
+                                <ul class="tabs">
+                                  <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                                  <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                                  <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                                  <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                                </ul>
+                              </div>
+                        <div class="card-content">
+  
+							<div class="clearBoth"><br/></div>
+							<div id="test1" class="col s12"><p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+							<div id="test2" class="col s12"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+							<div id="test3" class="col s12"><p>Bpsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+							<div id="test4" class="col s12"><p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
+                           <div class="clearBoth"><br/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  -->
+                    <!-- /. ROW  --> 
+					</div>
+			 <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="../static/js/jquery-1.10.2.js"></script>
+	
+	<!-- Bootstrap Js -->
+    <script src="../static/js/bootstrap.min.js"></script>
+	
+	<script src="../static/materialize/js/materialize.min.js"></script>
+	
+    <!-- Metis Menu Js -->
+    <script src="../static/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="../static/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="../static/js/morris/morris.js"></script>
+	
+	
+	<script src="../static/js/easypiechart.js"></script>
+	<script src="../static/js/easypiechart-data.js"></script>
+	
+	 <script src="../static/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="../static/js/custom-scripts.js"></script> 
+	<script>
+	$(document).ready(function(){
+	 $('ul.tabs').tabs();
+		$('.collapsible').collapsible({
+		  accordion: false, // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+		  onOpen: function(el) { alert('Open'); }, // Callback for Collapsible open
+		  onClose: function(el) { alert('Closed'); } // Callback for Collapsible close
+		}
+	  );
+	});
+	</script>
+ 
+
+</body>
+
+</html>

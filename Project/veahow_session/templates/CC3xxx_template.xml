@@ -39,9 +39,9 @@
       <Type>blob</Type>
       <Storage>SFLASH</Storage>
       <MaxSize>0</MaxSize>
-      <url>C:\TI\CC3200SDK_1.3.0\cc3200-sdk\example\blinky\ewarm\Release\Exe\blinky.bin</url>
+      <url>${sessionDir}/../EWARM/Debug/Exe/SimpleLink-CC3200.bin</url>
       <mode>
-         <ModeEntry name="Rollback" checked="true"/>
+         <ModeEntry name="Rollback" checked="false"/>
          <ModeEntry name="Secured" checked="false"/>
          <ModeEntry name="NoSignatureTest" checked="false"/>
          <ModeEntry name="StaticToken" checked="false"/>
@@ -390,5 +390,68 @@
       <Erase>false</Erase>
       <Certificate>&quot;&quot;</Certificate>
       <Signature>&quot;&quot;</Signature>
+   </Filename>
+   <Filename name="www/main.html" category="user">
+      <Version>0</Version>
+      <Type>blob</Type>
+      <Storage>SFLASH</Storage>
+      <MaxSize>0</MaxSize>
+      <url>${sessionDir}/../../Source/html/main.html</url>
+      <mode>
+         <ModeEntry name="Rollback" checked="false"/>
+         <ModeEntry name="Secured" checked="false"/>
+         <ModeEntry name="NoSignatureTest" checked="false"/>
+         <ModeEntry name="StaticToken" checked="false"/>
+         <ModeEntry name="VendorToken" checked="false"/>
+         <ModeEntry name="PublicWrite" checked="false"/>
+         <ModeEntry name="PublicRead" checked="false"/>
+      </mode>
+      <verify>true</verify>
+      <Update>true</Update>
+      <Erase>true</Erase>
+      <Certificate></Certificate>
+      <Signature></Signature>
+   </Filename>
+   <Filename name="www/js/jquery-1.8.3.min.js" category="user">
+      <Version>0</Version>
+      <Type>blob</Type>
+      <Storage>SFLASH</Storage>
+      <MaxSize>0</MaxSize>
+      <url>${sessionDir}/../../Source/html/js/jquery-1.8.3.min.js</url>
+      <mode>
+         <ModeEntry name="Rollback" checked="false"/>
+         <ModeEntry name="Secured" checked="false"/>
+         <ModeEntry name="NoSignatureTest" checked="false"/>
+         <ModeEntry name="StaticToken" checked="false"/>
+         <ModeEntry name="VendorToken" checked="false"/>
+         <ModeEntry name="PublicWrite" checked="false"/>
+         <ModeEntry name="PublicRead" checked="false"/>
+      </mode>
+      <verify>true</verify>
+      <Update>true</Update>
+      <Erase>true</Erase>
+      <Certificate></Certificate>
+      <Signature></Signature>
+   </Filename>
+   <Filename name="www/param_status.html" category="user">
+      <Version>0</Version>
+      <Type>blob</Type>
+      <Storage>SFLASH</Storage>
+      <MaxSize>0</MaxSize>
+      <url>${sessionDir}/../../Source/html/param_status.html</url>
+      <mode>
+         <ModeEntry name="Rollback" checked="false"/>
+         <ModeEntry name="Secured" checked="false"/>
+         <ModeEntry name="NoSignatureTest" checked="false"/>
+         <ModeEntry name="StaticToken" checked="false"/>
+         <ModeEntry name="VendorToken" checked="false"/>
+         <ModeEntry name="PublicWrite" checked="false"/>
+         <ModeEntry name="PublicRead" checked="false"/>
+      </mode>
+      <verify>true</verify>
+      <Update>true</Update>
+      <Erase>true</Erase>
+      <Certificate></Certificate>
+      <Signature></Signature>
    </Filename>
 </CC3xxx>

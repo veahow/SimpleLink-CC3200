@@ -49,18 +49,48 @@
     </Simulator>
     <LMIFTDIDriver>
         <LMI_ResetMode>0x00000000</LMI_ResetMode>
+        <LMIFTDIserialNo>cc3101A</LMIFTDIserialNo>
+        <LMIFTDIfoundProbes>FFFFFFFF:cc3101A:</LMIFTDIfoundProbes>
     </LMIFTDIDriver>
     <Disassemble_mode>
         <mode>0</mode>
     </Disassemble_mode>
+    <DebugChecksum>
+        <Checksum>1452020744</Checksum>
+    </DebugChecksum>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints>
         <Count>0</Count>
     </Breakpoints>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
 </settings>

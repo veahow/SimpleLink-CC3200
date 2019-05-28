@@ -7,11 +7,7 @@
 * Change Logs  : 
 ***************************************************************************/
 
-
-//Free_rtos/ti-rtos includes
-
 #include "global.h"
-#include "osi.h"
 
 
 #if defined(gcc) || defined(ccs)
@@ -97,3 +93,30 @@ void vApplicationStackOverflowHook( OsiTaskHandle *pxTask,
     }
 }
 #endif //USE_FREERTOS
+
+/*******************************************************************************
+ 函数名：BoardInit
+ 功  能: 板子初始化 开启必要的基础功能
+ 参  数：无
+ 返回值：无
+*******************************************************************************/
+void BoardInit(void)
+{
+  //使用TIRTOS则不需要初始化向量表 该系统会自动初始化
+#ifndef USE_TIRTOS
+    // 初始化向量表
+#if defined(ccs)
+    MAP_IntVTableBaseSet((unsigned long)&g_pfnVectors[0]);
+#endif
+#if defined(ewarm)
+    MAP_IntVTableBaseSet((unsigned long)&__vector_table);
+#endif
+#endif
+    
+
+    // 使能处理器
+    MAP_IntMasterEnable();
+    MAP_IntEnable(FAULT_SYSTICK);
+
+    PRCMCC3200MCUInit();
+}

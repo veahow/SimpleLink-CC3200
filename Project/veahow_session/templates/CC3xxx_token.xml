@@ -92,4 +92,19 @@
       <RW>0x0</RW>
       <RO>0x0</RO>
    </Filename>
+   <Filename name="www/main.html">
+      <MAX>0x0</MAX>
+      <RW>0x0</RW>
+      <RO>0x0</RO>
+   </Filename>
+   <Filename name="www/js/jquery-1.8.3.min.js">
+      <MAX>0x0</MAX>
+      <RW>0x0</RW>
+      <RO>0x0</RO>
+   </Filename>
+   <Filename name="www/param_status.html">
+      <MAX>0x0</MAX>
+      <RW>0x0</RW>
+      <RO>0x0</RO>
+   </Filename>
 </CC3xxx>
