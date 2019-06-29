@@ -14,8 +14,10 @@
 /Source/network/netapps/mqtt/ewarm/client/
 /Source/network/netapps/mqtt/ewarm/client_server/
 
+/Project/server/server-tcp/.vs/
 /Project/server/server-tcp/Debug/
 /Project/server/server-tcp/x64/
 
+/Project/server/server-udp/.vs/
 /Project/server/server-udp/Debug/
 /Project/server/server-udp/x64/

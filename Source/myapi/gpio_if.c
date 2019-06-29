@@ -212,6 +212,12 @@ GPIO_IF_LedStatus(unsigned char ucGPIONum)
 //! \brief  Toggles a board LED
 //
 //*****************************************************************************
+/*******************************************************************************
+ 函数名：GPIO_IF_LedToggle
+ 功  能: LED状态反转
+ 参  数：ledNum LED标识
+ 返回值：无
+*******************************************************************************/
 void GPIO_IF_LedToggle(unsigned char ucLedNum)
 {
 
@@ -364,38 +370,44 @@ GPIO_IF_Get(unsigned char ucPin,
 //! \return None
 //
 //*****************************************************************************
-
+/*******************************************************************************
+ 函数名：GPIO_IF_ButtonInit
+ 功  能: 按键中断初始化 初始化SW2和SW3按键
+ 参  数：无
+ 返回值：无
+*******************************************************************************/
 void GPIO_IF_ButtonInit()
 {
-    // SW1按键中断初始化
-    GPIOIntTypeSet(GPIOA1_BASE, GPIO_PIN_5, GPIO_RISING_EDGE);
-    GPIOIntRegister(GPIOA1_BASE, GPIO_IF_S1IntHandler);
-    GPIOIntEnable(GPIOA1_BASE, GPIO_INT_PIN_5);
-    
-    // SW2按键中断初始化
+    // SW2按键中断初始化 GPIO22
     GPIOIntTypeSet(GPIOA2_BASE, GPIO_PIN_6, GPIO_RISING_EDGE);
     GPIOIntRegister(GPIOA2_BASE, GPIO_IF_S2IntHandler);
     GPIOIntEnable(GPIOA2_BASE, GPIO_INT_PIN_6);
-}
-
-void GPIO_IF_S1IntHandler()
-{
-    unsigned long ulPinState =  GPIOIntStatus(GPIOA2_BASE,1);
-    if(ulPinState & GPIO_PIN_6)
-    {
-      // 这里写模式切换的函数
-      GPIOPinWrite(GPIOA1_BASE,GPIO_PIN_3,GPIO_PIN_3);
-      GPIOIntClear(GPIOA2_BASE,GPIO_INT_PIN_6);
-    }
+  
+    // SW3按键中断初始化 GPIO13
+    GPIOIntTypeSet(GPIOA1_BASE, GPIO_PIN_5, GPIO_RISING_EDGE);
+    GPIOIntRegister(GPIOA1_BASE, GPIO_IF_S3IntHandler);
+    GPIOIntEnable(GPIOA1_BASE, GPIO_INT_PIN_5);
+   
 }
 
 void GPIO_IF_S2IntHandler()
 {
+    unsigned long ulPinState =  GPIOIntStatus(GPIOA2_BASE,1);
+    if(ulPinState & GPIO_PIN_6)
+    {
+      GPIO_IF_LedToggle(MCU_RED_LED_GPIO);
+//      GPIOPinWrite(GPIOA1_BASE,GPIO_PIN_3,GPIO_PIN_3);
+      GPIOIntClear(GPIOA2_BASE,GPIO_INT_PIN_6);
+    }
+}
+
+void GPIO_IF_S3IntHandler()
+{
   unsigned long ulPinState =  GPIOIntStatus(GPIOA1_BASE,1);
     if(ulPinState & GPIO_PIN_5)
     {
-       // 这里写模式切换的函数
-      GPIOPinWrite(GPIOA1_BASE,GPIO_PIN_3, 0);
+      GPIO_IF_LedToggle(MCU_RED_LED_GPIO);
+//      GPIOPinWrite(GPIOA1_BASE,GPIO_PIN_3, 0);
       GPIOIntClear(GPIOA1_BASE,GPIO_INT_PIN_5);
     }
 }

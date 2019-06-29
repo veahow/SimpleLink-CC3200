@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="refresh" content="5">
+	<meta http-equiv="refresh" content="3">
 	<title>基于SimpleLink的物联网平台设计与开发</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="../static/materialize/css/materialize.min.css" media="screen,projection" />
@@ -117,7 +117,7 @@
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="card">
 							<div class="card-action">
-								<b>LED</b>
+								<b>LED与加速度传感器</b>
 							</div>
 							<div class="card-image">
 								<div class="collection">
@@ -130,6 +130,10 @@
 									</a>
 									<!-- <a href="#!" class="collection-item">橘色LED灯（GPIO_10）<span class="badge blue">暂未开发</span></a>
 									<a href="#!" class="collection-item">绿色LED灯（GPIO_11）<span class="badge green">暂未开发</span></a> -->
+
+									<a href="#!" class="collection-item">加速度x轴数据<span class="badge blue">{{ ax }}</span></a>
+									<a href="#!" class="collection-item">加速度y轴数据<span class="badge blue">{{ ay }}</span></a>
+									<a href="#!" class="collection-item">加速度z轴数据<span class="badge blue">{{ az }}</span></a>
 								</div>
 							</div>
 						</div>

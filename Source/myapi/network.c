@@ -16,9 +16,11 @@ unsigned long  g_ulStaIp = 0;    // 客户端IP地址
 unsigned long  g_ulGatewayIP = 0; //Network Gateway IP address 网关IP地址
 unsigned char  g_ucConnectionSSID[SSID_LEN_MAX+1]; //Connection SSID 接入点名称
 unsigned char  g_ucConnectionBSSID[BSSID_LEN_MAX]; //Connection BSSID 接入点MAC地址
+
 volatile unsigned char g_ucProfileAdded = 1;    // 配置文件已添加
 unsigned char g_ucConnectedToConfAP = 0;    // 已连接到配置接入点
 volatile unsigned char g_ucProvisioningDone = 0;    // 是否AP配置完成 完成-1 未完成-0
+
 unsigned char g_ucPriority = 0;    // ?
 signed char g_cWlanSSID[AP_SSID_LEN_MAX];
 signed char g_cWlanSecurityKey[50];
@@ -1014,6 +1016,7 @@ static long WlanConnect()
 void WlanStationMode()
 //void WlanStationMode( void *pvParameters )
 {
+    GPIO_IF_LedOff(MCU_ALL_LED_IND);    // 关闭所有灯
 
     long lRetVal = -1;
     InitializeAppVariables();    // 初始化程序变量
@@ -1384,22 +1387,14 @@ static int ConfigureMode(int iMode)
 *******************************************************************************/
 void ProvisioningAP(void* pTaskParams)
 {
+      GPIO_IF_LedOff(MCU_ALL_LED_IND);    // 关闭所有灯
+      GPIO_IF_LedOff(MCU_RED_LED_GPIO);    // 开红灯表示在AP状态
+      
 //   long lCountSSID;
    long lRetVal = -1;
 
     InitializeAppVariables();    // 初始化应用变量
 
-    //
-    // Following function configure the device to default state by cleaning
-    // the persistent settings stored in NVMEM (viz. connection profiles &
-    // policies, power policy etc)
-    //
-    // Applications may choose to skip this step if the developer is sure
-    // that the device is in its default state at start of applicaton
-    //
-    // Note that all profiles and persistent settings that were done on the
-    // device will be lost
-    //
    lRetVal = ConfigureSimpleLinkToDefaultState();    // 配置成初始状态
    if(lRetVal < 0)
    {
@@ -1458,11 +1453,9 @@ void ProvisioningAP(void* pTaskParams)
 
         while(!IS_IP_ACQUIRED(g_ulStatus))
         {
-          //looping till ip is acquired
           // 循环直至IP获取
         }
 
-        //Stop Internal HTTP Server
         // 停止内部HTTP服务器
         lRetVal = sl_NetAppStop(SL_NET_APP_HTTP_SERVER_ID);
         if(lRetVal < 0)
@@ -1471,7 +1464,6 @@ void ProvisioningAP(void* pTaskParams)
             LOOP_FOREVER();
         }
 
-        //Start Internal HTTP Server
         // 开启内部HTTP服务器
         lRetVal = sl_NetAppStart(SL_NET_APP_HTTP_SERVER_ID);
         if(lRetVal < 0)
@@ -1480,23 +1472,15 @@ void ProvisioningAP(void* pTaskParams)
             LOOP_FOREVER();
         }
 
-	 //
-	// Wait for AP Configuraiton, Open Browser and Configure AP
-	//
         // 等待AP配置Wi-Fi信息
 	while(g_ucProfileAdded && !g_ucProvisioningDone)
 	{
 		MAP_UtilsDelay(100);
 	}
 
-	g_ucProfileAdded = 1;    // 配置添加成功
+//	g_ucProfileAdded = 1;    // 配置添加成功
+        g_ucProvisioningDone = 1;
 
-        
-        // 这部分应该转成STA了
-        
-        //
-        // Configure to STA Mode
-        // 
         // 设置为STA模式
         if(ConfigureMode(ROLE_STA) !=ROLE_STA)
         {
@@ -1506,35 +1490,37 @@ void ProvisioningAP(void* pTaskParams)
             CLR_STATUS_BIT_ALL(g_ulStatus);
             LOOP_FOREVER();
         }
-        
-        
            
         lRetVal = WlanConnect();    // 连接WLAN无线局域网
-    if(lRetVal < 0)
-    {
-      // 向串口打印“设备建立连接失败”
-        UART_PRINT("Failed to establish connection of an AP \n\r");
-        LOOP_FOREVER();
-    }
+        if(lRetVal < 0)
+        {
+          // 向串口打印“设备建立连接失败”
+            UART_PRINT("Failed to establish connection of an AP \n\r");
+            LOOP_FOREVER();
+        }
 
-    // 向串口打印“建立AP连接且IP已获得”
-    UART_PRINT("Connection established w/ AP and IP is aquired \n\r");
-    UART_PRINT("Pinging...! \n\r");
+        // 向串口打印“建立AP连接且IP已获得”
+        UART_PRINT("Connection established AP and IP is aquired \n\r");
+        UART_PRINT("Pinging...! \n\r");
+        
+        // 获得网关响应后表示连接成功 橘灯亮
+        GPIO_IF_LedOn(MCU_ORANGE_LED_GPIO);
 
-    //
-    // Checking the Lan connection by pinging to AP gateway
-    //
-    lRetVal = CheckLanConnection();    // 检查LAN局域网连接
-    if(lRetVal < 0)
-    {
-      // 向串口打印“设备无法ping通网关”
-        UART_PRINT("Device couldn't ping the gateway \n\r");
-        LOOP_FOREVER();
+
+          lRetVal = CheckLanConnection();    // 检查LAN局域网连接
+          if(lRetVal < 0)
+          {
+            // 向串口打印“设备无法ping通网关”
+              UART_PRINT("Device couldn't ping the gateway \n\r");
+              LOOP_FOREVER();
+          }
+        
+        // 获得网关响应后表示连接成功 绿灯亮
+          GPIO_IF_LedOn(MCU_GREEN_LED_GPIO);
     }
     
-    // 获得网关响应后表示连接成功 绿灯亮
-    GPIO_IF_LedOn(MCU_GREEN_LED_GPIO);
-    }
+        UdpData();
+    
         //
         // Connect to the Configured Access Point
         //

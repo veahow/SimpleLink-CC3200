@@ -150,4 +150,14 @@ void PinMuxConfig(void)
     // Configure PIN_57 for UART0 UART0_RX
     //
     MAP_PinTypeUART(PIN_57, PIN_MODE_3);
+    
+    //
+    // Configure PIN_03 for I2C0 I2C_SCL
+    //
+    MAP_PinTypeI2C(PIN_03, PIN_MODE_5);
+
+    //
+    // Configure PIN_04 for I2C0 I2C_SDA
+    //
+    MAP_PinTypeI2C(PIN_04, PIN_MODE_5);
 }

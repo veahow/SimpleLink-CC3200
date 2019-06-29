@@ -26,8 +26,11 @@ unsigned short hum_port = 8033;
 unsigned short pwm_port = 8034;
 
 unsigned char led_status;
-unsigned int temp_int, temp_dec;
-unsigned int hum_int, hum_dec;
+unsigned int temp_int, temp_dec;    // 板载温度传感器 or SHT20温度传感器
+unsigned int hum_int, hum_dec;    // SHT20湿度传感器
+unsigned char ax, ay, az;    // 板载加速度传感器
+int pwm_cnt = 0;
+int unit_cnt = 50;
 
 
   // Application specific status/error codes
@@ -567,8 +570,12 @@ void UdpHumStatus()
 void UdpData()
 {
     // 用完LED灯后使能I2C相关引脚 开发板演示时使用
-    MAP_PinTypeI2C(PIN_01, PIN_MODE_1);
-    MAP_PinTypeI2C(PIN_02, PIN_MODE_1);
+//    MAP_PinTypeI2C(PIN_01, PIN_MODE_1);
+//    MAP_PinTypeI2C(PIN_02, PIN_MODE_1);
+
+    // PWM引脚使能 
+    MAP_PinTypeTimer(PIN_01, PIN_MODE_3);
+    MAP_PinTypeTimer(PIN_02, PIN_MODE_3);
     
     int iRetVal = 0;
     iRetVal = UdpClientCreate(PORT_NUM, &sockCli, &sLocalAddr, &sAddr);
@@ -586,38 +593,63 @@ void UdpData()
           UART_PRINT("LED_STATUS:%d \n\r", led_status);
           if(led_status == 1) UdpClientSend("1", sockCli, &sAddr);
           if(led_status == 0) UdpClientSend("0", sockCli, &sAddr);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
+          MAP_UtilsDelay(8000000);    // 延时约0.6s
+
+          // SHT20温度、湿度测量
+//          char str[10];
+//          SHT2x_Read_Tempature(&temp_int, &temp_dec);    // 读取温度值
+//          memset(str, 0, sizeof(str));
+//          snprintf(str, sizeof(str), "%d.", temp_int);
+//          UdpClientSend(str, sockCli, &sAddr);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          memset(str, 0, sizeof(str));
+//          snprintf(str, sizeof(str), "%d", temp_dec);
+//          UdpClientSend(str, sockCli, &sAddr);      
+//          
+//          SHT2x_Read_Humidity(&hum_int, &hum_dec);    // 读取湿度值
+//          memset(str, 0, sizeof(str));
+//          snprintf(str, sizeof(str), "%d.", hum_int);
+//          UdpClientSend(str, sockCli, &sAddr);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          MAP_UtilsDelay(800000);
+//          memset(str, 0, sizeof(str));
+//          snprintf(str, sizeof(str), "%d", hum_dec);
+//          UdpClientSend(str, sockCli, &sAddr);
           
+          // 板载传感器温度、加速度测量
           char str[10];
-          SHT2x_Read_Tempature(&temp_int, &temp_dec);    // 读取温度值
-          memset(str, 0, sizeof(str));
+          TMP_Read(&temp_int, &temp_dec);    // 读取温度值
+          memset(str, 0, sizeof(str));    // 清空字符串
           snprintf(str, sizeof(str), "%d.", temp_int);
           UdpClientSend(str, sockCli, &sAddr);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          memset(str, 0, sizeof(str));
-          snprintf(str, sizeof(str), "%d", temp_dec);
+          memset(str, 0, sizeof(str));    // 清空字符串
+          snprintf(str, sizeof(str), "%02d", temp_dec);
           UdpClientSend(str, sockCli, &sAddr);      
           
-          SHT2x_Read_Humidity(&hum_int, &hum_dec);    // 读取湿度值
-          memset(str, 0, sizeof(str));
-          snprintf(str, sizeof(str), "%d.", hum_int);
+          BMA_Read(&ax, &ay, &az);    // 读取加速度值
+          memset(str, 0, sizeof(str));    // 清空字符串
+          snprintf(str, sizeof(str), "%03d.", ax);
           UdpClientSend(str, sockCli, &sAddr);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          MAP_UtilsDelay(800000);
-          memset(str, 0, sizeof(str));
-          snprintf(str, sizeof(str), "%d", hum_dec);
+          memset(str, 0, sizeof(str));    // 清空字符串
+          snprintf(str, sizeof(str), "%03d", ay);
           UdpClientSend(str, sockCli, &sAddr);
+          memset(str, 0, sizeof(str));    // 清空字符串
+          snprintf(str, sizeof(str), "%03d", az);
+          UdpClientSend(str, sockCli, &sAddr);
+          
+          // PWM占空比状态发送
+          memset(str, 0, sizeof(str));    // 清空字符串
+          snprintf(str, sizeof(str), "%d", pwm_cnt);
+          UART_PRINT("PWM_STATUS:%d \n\r", pwm_cnt);
+          UdpClientSend(str, sockCli, &sAddr);
+          
           
           osi_Sleep(10000);
     }
@@ -646,15 +678,25 @@ void UdpOperation()
           
           // pwm增加
           if(!strcmp(dataBuf, "pwm_add")){
-            break;
+            pwm_cnt += unit_cnt;
+            if(pwm_cnt > 255) pwm_cnt = 255;
+            UART_PRINT("%s \n\r", dataBuf);
+            UpdateDutyCycle(TIMERA3_BASE, TIMER_B, pwm_cnt);    // 引脚1 黄灯
+            UpdateDutyCycle(TIMERA3_BASE, TIMER_A, pwm_cnt);    // 引脚2 绿灯
+            
           }
           
           // pwm减少
           if(!strcmp(dataBuf, "pwm_reduce")){
-            break;
+            pwm_cnt -= unit_cnt;
+            if(pwm_cnt < 0) pwm_cnt = 0;
+            UART_PRINT("%s \n\r", dataBuf);
+            UpdateDutyCycle(TIMERA3_BASE, TIMER_B, pwm_cnt);    // 引脚1 黄灯
+            UpdateDutyCycle(TIMERA3_BASE, TIMER_A, pwm_cnt);    // 引脚2 绿灯
+            
           }
           
 //          if(!strlen(dataBuf)) break;
-            osi_Sleep(10000);
+            osi_Sleep(5000);
     }
 }

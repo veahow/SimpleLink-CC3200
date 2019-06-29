@@ -39,6 +39,9 @@ led_status = '1'
 tmp_status = 0
 hum_status = 0
 pwm_status = 0
+ax = 0
+ay = 0
+az = 0
 
 addrCli = ()
 
@@ -111,6 +114,9 @@ def UdpRecvData():
     global tmp_status
     global hum_status
     global pwm_status
+    global ax
+    global ay
+    global az
     while True:
         print('等待CC3200发送数据...')
         led_status, addrCli = sockServ.recvfrom(BUF_SIZE)
@@ -120,6 +126,24 @@ def UdpRecvData():
         if led_status == '0':
             print('LED状态:关闭')
 
+        # SHT20温度、湿度测量
+        # tmp_int, addrCli = sockServ.recvfrom(BUF_SIZE)
+        # tmp_int = tmp_int.decode('utf-8', 'ignore')[0:3]    # 整数位
+        # tmp_dec, addrCli = sockServ.recvfrom(BUF_SIZE)  
+        # tmp_dec = tmp_dec.decode('utf-8', 'ignore')[0:2]    # 小数位
+        # tmp_status = tmp_int + tmp_dec
+        # print('当前温度值:%s℃' % tmp_status)
+        
+        # hum_int, addrCli = sockServ.recvfrom(BUF_SIZE)
+        # hum_int = hum_int.decode('utf-8', 'ignore')[0:3]    # 整数位
+        # hum_dec, addrCli = sockServ.recvfrom(BUF_SIZE)  
+        # hum_dec = hum_dec.decode('utf-8', 'ignore')[0:2]    # 小数位
+        # hum_status = hum_int + hum_dec
+        # print('当前湿度值:%sRH%%' % hum_status)
+
+        # print('\n')
+            
+        # CC3200板载传感器温度、加速度测量
         tmp_int, addrCli = sockServ.recvfrom(BUF_SIZE)
         tmp_int = tmp_int.decode('utf-8', 'ignore')[0:3]    # 整数位
         tmp_dec, addrCli = sockServ.recvfrom(BUF_SIZE)  
@@ -127,18 +151,24 @@ def UdpRecvData():
         tmp_status = tmp_int + tmp_dec
         print('当前温度值:%s℃' % tmp_status)
         
-        hum_int, addrCli = sockServ.recvfrom(BUF_SIZE)
-        hum_int = hum_int.decode('utf-8', 'ignore')[0:3]    # 整数位
-        hum_dec, addrCli = sockServ.recvfrom(BUF_SIZE)  
-        hum_dec = hum_dec.decode('utf-8', 'ignore')[0:2]    # 小数位
-        hum_status = hum_int + hum_dec
-        print('当前湿度值:%sRH%%' % hum_status)
+        ax, addrCli = sockServ.recvfrom(BUF_SIZE)
+        ax = ax.decode('utf-8', 'ignore')[0:3]    # x加速度
+        ay, addrCli = sockServ.recvfrom(BUF_SIZE)
+        ay = ay.decode('utf-8', 'ignore')[0:3]    # y加速度
+        az, addrCli = sockServ.recvfrom(BUF_SIZE)
+        az = az.decode('utf-8', 'ignore')[0:3]    # z加速度
+        print('当前加速度值 x:%s y:%s z:%s' % (ax, ay, az))
+
+        # pwm
+        pwm_status, addrCli = sockServ.recvfrom(BUF_SIZE)
+        pwm_status = pwm_status.decode('utf-8', 'ignore')[0:3]
+        print('当前PWM占空比:%s' % pwm_status)
 
         print('\n')
 
 @app.route("/")
 def index():
-    return render_template('index.html', led_status=led_status, tmp_status=tmp_status, hum_status=hum_status, pwm_status=pwm_status)
+    return render_template('index.html', led_status=led_status, tmp_status=tmp_status, hum_status=hum_status, pwm_status=pwm_status, ax=ax, ay=ay, az=az)
 
 @app.route("/about")
 def about():
@@ -264,15 +294,47 @@ def wechat():
                     else:
                         content = 'CC3200与服务器未连接'
 
+                # 加速度
+                if event_key == 'accel_status':    # 湿度状态
+                    # UDP
+                    if addrCli:
+                        # sockServ.sendto('hum_status'.encode(encoding='utf-8'), addrCli)
+                        # hum_int, addr = sockServ.recvfrom(BUF_SIZE)
+                        # hum_int = hum_int.decode('utf-8')[0:3]    # 整数位
+
+                        # hum_dec, addr = sockServ.recvfrom(BUF_SIZE)  
+                        # hum_dec = hum_dec.decode('utf-8')[0:2]    # 小数位
+
+                        # hum_status = hum_int + hum_dec
+                        content = '当前加速度值 x:%s y:%s z:%s' % (ax, ay, az)
+                    else:
+                        content = 'CC3200与服务器未连接'
+
                 # PWM
                 if event_key == 'pwm_add':    # 增加PWM
-                    content = '该功能未开发'
+                    # UDP
+                    if addrCli:
+                        sockServ.sendto('pwm_add'.encode(encoding='utf-8'), addrCli)
+                        time.sleep(1)
+                        content = 'PWM占空比增加'
+                    else:
+                        content = 'CC3200与服务器未连接'
 
                 if event_key == 'pwm_reduce':    # 减少PWM
-                    content = '该功能未开发'
+                    # UDP
+                    if addrCli:
+                        sockServ.sendto('pwm_reduce'.encode(encoding='utf-8'), addrCli)
+                        time.sleep(1)
+                        content = 'PWM占空比减少'
+                    else:
+                        content = 'CC3200与服务器未连接'
 
                 if event_key == 'pwm_status':    # PWM当前状态 占空比
-                    content = '该功能未开发'
+                    # UDP
+                    if addrCli:
+                        content = '当前PWM值:%s' % pwm_status
+                    else:
+                        content = 'CC3200与服务器未连接'
         else:
             content = xml_rec.find('Content').text
 

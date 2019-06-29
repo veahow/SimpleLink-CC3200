@@ -55,26 +55,12 @@ void UpdateDutyCycle(unsigned long ulBase, unsigned long ulTimer,
     MAP_TimerMatchSet(ulBase,ulTimer,(ucLevel*DUTYCYCLE_GRANULARITY));
 }
 
-//****************************************************************************
-//
-//! Setup the timer in PWM mode
-//!
-//! \param ulBase is the base address of the timer to be configured
-//! \param ulTimer is the timer to be setup (TIMER_A or  TIMER_B)
-//! \param ulConfig is the timer configuration setting
-//! \param ucInvert is to select the inversion of the output
-//! 
-//! This function  
-//!    1. The specified timer is setup to operate as PWM
-//!
-//! \return None.
-//
-//****************************************************************************
+
 /*******************************************************************************
  函数名：SetupTimerPWMMode
  功  能: 设置定时器工作在PWM模式
  参  数：ulBase:定时器基地址
-         ulTimer:定时器选择
+         ulTimer:定时器选择 TIMER_A或TIME_B
          ulConfig:定时器配置
          ucInvert:定时器输出电平
  返回值：无
@@ -82,43 +68,19 @@ void UpdateDutyCycle(unsigned long ulBase, unsigned long ulTimer,
 void SetupTimerPWMMode(unsigned long ulBase, unsigned long ulTimer,
                        unsigned long ulConfig, unsigned char ucInvert)
 {
-    //
-    // Set GPT - Configured Timer in PWM mode.
-    //
+
     MAP_TimerConfigure(ulBase,ulConfig);        // 配置定时器
     MAP_TimerPrescaleSet(ulBase,ulTimer,0);     // 设置预分频
     
-    //
-    // Inverting the timer output if required
-    //
     MAP_TimerControlLevel(ulBase,ulTimer,ucInvert);     // 控制输出电平 电平翻转
+
+    MAP_TimerLoadSet(ulBase,ulTimer,TIMER_INTERVAL_RELOAD);     // 设置定时器初值 0.5ms时间
     
-    //
-    // Load value set to ~0.5 ms time period
-    //
-    MAP_TimerLoadSet(ulBase,ulTimer,TIMER_INTERVAL_RELOAD);     // 设置定时器初值
-    
-    //
-    // Match value set so as to output level 0
-    //
     MAP_TimerMatchSet(ulBase,ulTimer,TIMER_INTERVAL_RELOAD);    // 设置定时器匹配值
 
 }
 
-//****************************************************************************
-//
-//! Sets up the identified timers as PWM to drive the peripherals
-//!
-//! \param none
-//! 
-//! This function sets up the folowing 
-//!    1. TIMERA2 (TIMER B) as RED of RGB light
-//!    2. TIMERA3 (TIMER B) as YELLOW of RGB light
-//!    3. TIMERA3 (TIMER A) as GREEN of RGB light
-//!
-//! \return None.
-//
-//****************************************************************************
+
 /*******************************************************************************
  函数名：InitPWMModules
  功  能: PWM初始化
@@ -139,12 +101,12 @@ void InitPWMModules()
     SetupTimerPWMMode(TIMERA2_BASE, TIMER_B,
             (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_B_PWM), 1);
     //
-    // TIMERA3 (TIMER B) as YELLOW of RGB light. GPIO 10 --> PWM_6
+    // TIMERA3 (TIMER B) as YELLOW of RGB light. GPIO 10 --> PWM_6 引脚1
     //
     SetupTimerPWMMode(TIMERA3_BASE, TIMER_A, 
             (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_PWM | TIMER_CFG_B_PWM), 1);
     //
-    // TIMERA3 (TIMER A) as GREEN of RGB light. GPIO 11 --> PWM_7
+    // TIMERA3 (TIMER A) as GREEN of RGB light. GPIO 11 --> PWM_7 引脚2
     //
     SetupTimerPWMMode(TIMERA3_BASE, TIMER_B, 
             (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_PWM | TIMER_CFG_B_PWM), 1);
@@ -191,9 +153,9 @@ void LedPwmLooper()
         //
         for(iLoopCnt = 0; iLoopCnt < 255; iLoopCnt++)
         {
-            UpdateDutyCycle(TIMERA2_BASE, TIMER_B, iLoopCnt);
-            UpdateDutyCycle(TIMERA3_BASE, TIMER_B, iLoopCnt);
-            UpdateDutyCycle(TIMERA3_BASE, TIMER_A, iLoopCnt);
+//            UpdateDutyCycle(TIMERA2_BASE, TIMER_B, iLoopCnt);
+//            UpdateDutyCycle(TIMERA3_BASE, TIMER_B, iLoopCnt);    // 引脚1 黄灯
+            UpdateDutyCycle(TIMERA3_BASE, TIMER_A, iLoopCnt);    // 引脚2 绿灯
             MAP_UtilsDelay(800000);     // 延时0.6s
         }
       

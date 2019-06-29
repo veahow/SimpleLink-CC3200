@@ -36,8 +36,9 @@ extern "C"
 extern void SHT2x_Test();
 extern int SHT2x_Read_Tempature(unsigned int *temp_int, unsigned int *temp_dec);
 extern int SHT2x_Read_Humidity(unsigned int *humi_int, unsigned int *humi_dec);
-extern void TMP_Read();
-extern void BMA_Read();
+extern void Board_Test();
+extern void TMP_Read(unsigned int *temp_int, unsigned int *temp_dec);
+extern void BMA_Read(unsigned char *ax, unsigned char *ay, unsigned char *az);
 
 //*****************************************************************************
 //

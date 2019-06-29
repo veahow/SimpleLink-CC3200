@@ -61,8 +61,9 @@ extern unsigned char GPIO_IF_LedStatus(unsigned char ucGPIONum);
 extern void GPIO_IF_LedToggle(unsigned char ucLedNum);
 
 // °´¼üSW2 SW3ÖÐ¶Ïº¯Êý
-extern void GPIO_IF_S1IntHandler();
+extern void GPIO_IF_ButtonInit();
 extern void GPIO_IF_S2IntHandler();
+extern void GPIO_IF_S3IntHandler();
 extern void test();
 
 

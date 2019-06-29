@@ -2387,9 +2387,6 @@
             </file>
         </group>
         <file>
-            <name>$PROJ_DIR$\..\..\Source\myapi\adc_if.c</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\..\Source\myapi\global.c</name>
         </file>
         <file>
@@ -2406,9 +2403,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\Source\myapi\sensor.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\Source\myapi\spi_if.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\Source\myapi\uart_if.c</name>
