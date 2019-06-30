@@ -44,6 +44,7 @@
 Please refer to [TI SimpleLink CC3200 LaunchPad](http://www.ti.com/tool/cc3200-launchxl) for hardware design & pcb layout. The software of project is based on this version.
 ### 2.1.2 Development Version (Failed)
 My hardware design is failed. This is for your reference only.
+
 Function|Pin Number|Pin Name|Signal Name|Signal Description
 :--------:|:----------:|:--------:|:-----------:|:------------------:
 PWM|1|GPIO10|GT_PWM06|GPTA3A_PWM
@@ -78,6 +79,7 @@ PWM|1|GPIO10|GT_PWM06|GPTA3A_PWM
 |LED|62|GPIO7|GPIO7|LED2|
 |LED|63|GPIO8|GPIO8|LED3|
 |PWM|64|GPIO9|GT_PWM05|GPTA2B_PWM|
+
 ## 2.2 Software Architecture
 ### 2.2.2 IoT Platform
 * Cloud Server : [Tencent Cloud](https://cloud.tencent.com/) 
