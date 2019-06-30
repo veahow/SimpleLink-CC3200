@@ -45,7 +45,7 @@ Please refer to [TI SimpleLink CC3200 LaunchPad](http://www.ti.com/tool/cc3200-l
 ### 2.1.2 Development Version (Failed)
 My hardware design is failed. This is for your reference only.
 |Function|Pin Number|Pin Name|Signal Name|Signal Description|
-|-|-|-|-|-|
+|---|---|---|---|---|
 |PWM|1|GPIO10|GT_PWM06|GPTA3A_PWM|
 |I2C|2|GPIO11|I2C_SDA|I2C Data|
 |I2C|3|GPIO12|I2C_SCL|I2C Clock|
